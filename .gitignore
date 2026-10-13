@@ -1,0 +1,23 @@
+# Runtime artifacts (may contain screenshots of private data)
+shots/
+logs/
+*.log
+bridge/.session
+backups/
+# WebDriverAgent checkout and build products
+WebDriverAgent/
+DerivedData/
+build/
+# Signing material
+*.p12
+*.cer
+*.mobileprovision
+*.provisionprofile
+# Per-app notes
+apps/*.md
+!apps/README.md
+# OS / Python
+.DS_Store
+._*
+__pycache__/
+*.pyc
