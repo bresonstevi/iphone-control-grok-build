@@ -1,0 +1,50 @@
+{
+  "allowed_apps": {
+    "com.apple.mobilesafari": "Safari",
+    "com.apple.Preferences": "Settings",
+    "PLACEHOLDER.app1": "Example App 1 (fill in bundle id)",
+    "PLACEHOLDER.app2": "Example App 2 (fill in bundle id)",
+    "PLACEHOLDER.app3": "Example App 3 (fill in bundle id)"
+  },
+  "risky_words": [
+    "send",
+    "buy",
+    "pay",
+    "submit",
+    "purchase",
+    "order",
+    "delete",
+    "checkout",
+    "confirm",
+    "transfer",
+    "post",
+    "publish",
+    "erase",
+    "reset",
+    "remove",
+    "sign out",
+    "log out",
+    "subscribe",
+    "donate",
+    "place order",
+    "book"
+  ],
+  "device": {
+    "udid": "YOUR_DEVICE_UDID",
+    "port": 8100,
+    "team_id": "YOUR_TEAM_ID",
+    "wda_bundle_id": "com.example.WebDriverAgentRunner",
+    "code_sign_style": "Automatic",
+    "iproxy_bin": "/opt/homebrew/bin/iproxy",
+    "wda_dir": "~/iphone-control/WebDriverAgent",
+    "wda_project": "WebDriverAgent.xcodeproj",
+    "wda_scheme": "WebDriverAgentRunner",
+    "derived_data": "~/iphone-control/DerivedData",
+    "wda_run_log": "~/iphone-control/wda-run.log",
+    "wda_build_log": "~/iphone-control/wda-build.log",
+    "iproxy_log": "~/iphone-control/iproxy.log",
+    "shots_dir": "~/iphone-control/shots",
+    "actions_log": "~/iphone-control/logs/actions.jsonl",
+    "default_url": "http://127.0.0.1:8100"
+  }
+}
