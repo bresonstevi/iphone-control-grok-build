@@ -1,0 +1,15 @@
+#!/bin/bash
+# Resolve symlinks, then exec the Python bridge next to this file.
+set -euo pipefail
+
+SOURCE="$0"
+while [ -L "$SOURCE" ]; do
+  LINK_DIR="$(cd "$(dirname "$SOURCE")" && pwd)"
+  TARGET="$(readlink "$SOURCE")"
+  case "$TARGET" in
+    /*) SOURCE="$TARGET" ;;
+    *) SOURCE="$LINK_DIR/$TARGET" ;;
+  esac
+done
+DIR="$(cd "$(dirname "$SOURCE")" && pwd -P)"
+exec /usr/bin/python3 "$DIR/iphone.py" "$@"
