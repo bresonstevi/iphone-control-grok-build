@@ -38,6 +38,7 @@ iphone-control/
 ## Setup
 
 1. Clone this repo to `~/iphone-control` (the default paths in `policy.json` assume that location; edit them if you put it elsewhere).
+   After downloading, make the scripts runnable: `chmod +x bridge/iphone bridge/resign.sh`
 2. Clone WebDriverAgent next to the bridge:
    ```
    cd ~/iphone-control
